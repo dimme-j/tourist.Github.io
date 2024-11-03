@@ -1,0 +1,118 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background color */
+    color: #333;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #333; /* Solid background color for navbar */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #28a745;
+}
+
+/* New Button Design */
+.btn-signup {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; /* Transition for color change */
+}
+
+.btn-signup:hover {
+    background-color: #fff;
+    color: #28a745;
+}
+
+/* Hero Section Styles */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://cdnvb4.haiper.ai/jobs/671cb33b57035dab598f1b81/671cc1ea8048d2b27914f061/3.jpg');
+    text-align: center;
+    height: 100vh;
+    padding-top: 70px; /* Adjust for fixed navbar */
+    background-color: #f4f4f9;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+/* Text Transition Effect */
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    opacity: 0;
+    transform: translateY(20px); /* Start text slightly lower */
+    animation: textFadeIn 1s ease forwards;
+}
+
+.hero-description {
+    font-size: 20px;
+    line-height: 1.6;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: textFadeIn 1.2s ease forwards;
+}
+
+/* Text Transition Animation */
+@keyframes textFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move text to original position */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none; /* Hide nav links on smaller screens */
+    }
+    .hero-title {
+        font-size: 36px;
+    }
+    .hero-description {
+        font-size: 18px;
+    }
+}

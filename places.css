@@ -1,0 +1,121 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light background color */
+    color: #333;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #333; /* Solid background color for navbar */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #28a745;
+}
+
+/* New Button Design */
+.btn-signup {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; /* Transition for color change */
+}
+
+.btn-signup:hover {
+    background-color: #fff;
+    color: #28a745;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://ingredient-generation-generated-ingredients.canva.com/50d00971-ad61-4190-a6e3-079bc3bd34bc?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHQLRPZXQM%2F20241026%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241026T155325Z&X-Amz-Expires=154296&X-Amz-Signature=bb6fe7df2759935a25bb0d26bfd6ab597025728d6d7b6a7ab6b05bc3843e7592&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Mon%2C%2028%20Oct%202024%2010%3A45%3A01%20GMT'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Featured Destinations */
+.featured-destinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.destination {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s; /* Smooth transform on hover */
+}
+
+.destination:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+}
+
+.destination-info {
+    padding: 15px;
+}
+
+/* Attraction Types */
+.attraction-types {
+    list-style: none;
+    padding: 10px;
+}
+
+.attraction-types li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}

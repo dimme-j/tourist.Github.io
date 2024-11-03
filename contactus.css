@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-signup {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Contact Us Section Styles */
+.contact-us {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #fce5cd, #f9f9f9); /* Warm gradient */
+}
+
+.contact-us h1 {
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-us p {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Contact Cards Layout */
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-item {
+    width: 250px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.contact-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.contact-item i {
+    font-size: 36px;
+    color: #28a745;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-item h2 {
+    font-size: 22px;
+    color: #333;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.contact-item p a {
+    font-size: 16px;
+    color: #28a745;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item p a:hover {
+    color: #1e7e34;
+}
+
+/* Social Media Section */
+.social-media {
+    margin-top: 50px;
+}
+
+.social-media h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.social-media p a {
+    font-size: 18px;
+    color: #c13584; /* Instagram brand color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media p a:hover {
+    color: #a0296e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
